@@ -1,6 +1,7 @@
 body {
     font-family: Optima, sans-serif;
     margin: 0;
+    height: 100%;
 }
 
 /* Header Styles */
@@ -47,11 +48,22 @@ header nav ul li a:hover {
 
 /* Hero Styles */
 
-.hero {
-    background-image: url(../images/Hero-image.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* About Styles */
+
+.about {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.about-image {
+    width: 10px;
+    height: 10px;
 }
 
 /* Footer Styles */
