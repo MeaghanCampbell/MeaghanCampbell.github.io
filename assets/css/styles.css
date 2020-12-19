@@ -195,7 +195,9 @@ footer {
     background-size: cover;
     margin: 0;
     padding: 0;
-    width: 100%
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 footer h2 {
     color: #F4F4F4;
@@ -268,5 +270,12 @@ footer h2 {
     .contact-info a {
         text-align: center;
         margin-bottom: 20px;
+    }
+    footer {
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer h2 {
+        padding: 15px 30px;
     }
 }
