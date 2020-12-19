@@ -147,6 +147,9 @@ header nav ul li a:hover {
     font-size: 30px;
     opacity: 0;
 }
+.work-items article a {
+    text-decoration: none;
+}
 
 .work-items article:hover h3 {
     opacity: 1;
@@ -266,6 +269,7 @@ footer h2 {
     }
     .contact-info {
         flex-direction: column;
+
     }
     .contact-info a {
         text-align: center;
