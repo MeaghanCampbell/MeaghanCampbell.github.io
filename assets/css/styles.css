@@ -107,7 +107,6 @@ header nav ul li a:hover {
     grid-auto-flow: dense;
     grid-gap: 10px;
     height: 400px;
-
 }
 .horiseon {
     background-image: url(../images/Horiseon.png);
@@ -115,6 +114,7 @@ header nav ul li a:hover {
     grid-row: 1 / span 1;
     width: 100%;
     background-size: cover;
+    border-radius: 5px;
 }
 .placeholder {
     grid-column: 1 / span 1;
@@ -122,6 +122,8 @@ header nav ul li a:hover {
     background-color: black;
     width: 100%;
     text-align: center;
+    border-radius: 5px;
+
 }
 .run-buddy {
     background-image: url(../images/run-buddy.png);
@@ -130,32 +132,39 @@ header nav ul li a:hover {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 5px;
+
 }
+
 .work-items article h3 {
     color: #F4F4F4;
     background-color: black;
     padding: 15px;
     border-radius: 5px;
-    opacity: 0;
     text-align: center;
     font-weight: lighter;
     letter-spacing: 1.5px;
-    
-}
-.run-buddy, .horiseon, .placeholder {
-    opacity: 0.4;
+    font-size: 30px;
+    opacity: 0;
 }
 
 .work-items article:hover h3 {
     opacity: 1;
     transition: all 0.5s ease-out;
 }
+.run-buddy, .horiseon, .placeholder {
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
 .run-buddy:hover, .horiseon:hover, .placeholder:hover {
     opacity: 1;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
     transition: all 0.5s ease-out;
 }
+
 
 
 /* Contact Styles */
@@ -196,4 +205,68 @@ footer h2 {
     letter-spacing: 1.5px;
     margin: 0;
     padding: 30px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 900px) {
+    section h2 {
+        text-align: center;
+    }
+    header {
+        justify-content: center;
+    }
+    header nav {
+        padding-top: 0;
+    }
+    header nav ul {
+        padding-inline-start: 0;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .about img {
+        width: 50%;
+    }
+    .about p {
+        padding: 20px 0 0 0;
+        text-align: center;
+        font-size: 18px;
+    }
+    .work h2 {
+        text-align: center;
+    }
+    .work-items {
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: auto;
+        height: 450px;
+    }
+    .horiseon {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+        height: 150px;
+    }
+    .placeholder {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 1;
+        height: 150px;
+    
+    }
+    .run-buddy {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+        height: 150px;
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+    .contact-info a {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
