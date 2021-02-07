@@ -108,25 +108,28 @@ header nav ul li a:hover {
     grid-gap: 10px;
     height: 400px;
 }
-.horiseon {
-    background-image: url(../images/Horiseon.png);
+.taskmaster-pro {
+    background-image: url(../images/Taskmaster-Pro.png);
+    background-position: center;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     width: 100%;
     background-size: cover;
     border-radius: 5px;
 }
-.placeholder {
+.weather-dashboard {
+    background-image: url(../images/Weather-Dashboard.png);
+    background-position: center;
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
-    background-color: black;
     width: 100%;
     text-align: center;
     border-radius: 5px;
 
 }
-.run-buddy {
-    background-image: url(../images/run-buddy.png);
+.disc-live {
+    background-image: url(../images/crowd.jpg);
+    background-position: center;
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
     width: 100%;
@@ -136,7 +139,8 @@ header nav ul li a:hover {
 
 }
 
-.work-items article h3 {
+.work-items article h3,
+.work-items article p {
     color: #F4F4F4;
     background-color: black;
     padding: 15px;
@@ -147,11 +151,17 @@ header nav ul li a:hover {
     font-size: 30px;
     opacity: 0;
 }
+
+.work-items article p {
+    font-size: 20px;
+}
+
 .work-items article a {
     text-decoration: none;
 }
 
-.work-items article:hover h3 {
+.work-items article:hover h3,
+.work-items article:hover p {
     opacity: 1;
     transition: all 0.5s ease-out;
 }
